@@ -1,0 +1,97 @@
+.container {
+  max-width: 1140px;
+  margin: auto;
+}
+
+header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header nav {
+  width: 331px;
+}
+
+header ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+.hero .container {
+  display: flex;
+  position: relative;
+}
+
+.hero button {
+  background-color: #FDEEE7;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+
+}
+
+
+.choice form {
+  display: flex;
+  align-items: center;
+}
+
+.choice label {
+  display: inline-flex;
+  flex-direction: column;
+
+}
+
+.videos{
+  min-height: 434px;
+
+}
+
+.videos .container{
+  display: flex;
+}
+
+.videos .column {
+  position: relative;
+  width: 50%;
+  min-height: 434px;
+
+}
+
+.videos video {
+  width: 555px;
+  height: 326px;
+  background-image: url("img/video.png");
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.videos button{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 100px;
+  width: 100px;
+  color:white;
+  border-radius: 50%;
+  background-image: url("img/play.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+
+
+
+
+
+footer {
+  background-color: #FEF8F6;
+}
