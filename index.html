@@ -5,16 +5,25 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Puma</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;1,500&family=Source+Serif+Pro:wght@600&display=swap"
+    rel="stylesheet">
 
   <link rel="stylesheet" href="reset.css">
   <link rel="stylesheet" href="style.css">
-</head>
+</head> 
 
 <body>
   <header>
     <div class="container">
-      <a href="/"><img src="img/puma.png"></a>
+      <a class="logo" href="/">
+        <img src="img/puma.png">
+        <h1>Puma</h1>
+      </a>
 
       <nav>
         <ul>
@@ -33,7 +42,7 @@
     <section class="hero">
       <div class="container">
         <div class="column">
-          <h1>Life is better in running <span>shoes</span>.</h1>
+          <h2>Life is better in running <span>shoes</span>.</h2>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Egestas leo ultrices </p>
         </div>
 
@@ -52,8 +61,8 @@
             <span>Brand</span>
             <select name="" id="">
               <option value="">Puma</option>
-              <option value=""></option>
-              <option value=""></option>
+              <option value="">Adidas</option>
+              <option value="">Nike</option>
             </select>
           </label>
 
@@ -61,8 +70,8 @@
             <span>Person</span>
             <select name="" id="">
               <option value="">Man</option>
-              <option value=""></option>
-              <option value=""></option>
+              <option value="">Woman</option>
+              <option value="">Kids</option>
             </select>
           </label>
 
@@ -70,8 +79,8 @@
             <span>Size</span>
             <select name="" id="">
               <option value="">Large</option>
-              <option value=""></option>
-              <option value=""></option>
+              <option value="">Small</option>
+              <option value="">Kids</option>
             </select>
           </label>
 
@@ -79,8 +88,8 @@
             <span>Price</span>
             <select name="" id="">
               <option value="">150$</option>
-              <option value=""></option>
-              <option value=""></option>
+              <option value="">200$</option>
+              <option value="">250%</option>
             </select>
           </label>
 
@@ -110,99 +119,111 @@
         <h3>Feature</h3>
         <h2>We have best feature in Shoes</h2>
 
-        <div class="left">
-          <img src="img/Vector-left.png">
-          <img src="img/Vector-left-2.png">
-          <h4>Quality</h4>
-          <p>Lorem ipsum dolor sit consectetur adipiscing elit. Viverra in ul</p>
-          <a href="/">Read more ></a>
-        </div>
+        <ul>
+          <li class="feature">
+            <div class="icon"><img src="img/img-svg/quality-icon.svg"></div>
+            <h4>Quality</h4>
+            <p>Lorem ipsum dolor sit consectetur adipiscing elit. Viverra in ul</p>
+            <a href="/">Read more ></a>
+          </li>
 
-        <div class="center">
-          <img src="img/vector-center.png">
-          <img src="img/vector-center-2.png">
-          <h4>Flexible</h4>
-          <p>Lorem ipsum dolor sit consectetur adipiscing elit. Viverra in ul</p>
-          <a href="/">Read more ></a>
-        </div>
+          <li class="feature">
+            <div class="icon"><img src="img/img-svg/flexible-icon.svg"></div>
+            <h4>Flexible</h4>
+            <p>Lorem ipsum dolor sit consectetur adipiscing elit. Viverra in ul</p>
+            <a href="/">Read more ></a>
+          </li>
 
-        <div class="right">
-          <img src="img/vector-right.png">
-          <img src="img/vector-right-2.png">
-          <h4>Long Lastinge</h4>
-          <p>Lorem ipsum dolor sit consectetur adipiscing elit. Viverra in ul</p>
-          <a href="/">Read more ></a>
-        </div>
-
+          <li class="feature">
+            <div class="icon"><img src="img/img-svg/long-lasting-icon.svg"></div>
+            <h4>Long Lastinge</h4>
+            <p>Lorem ipsum dolor sit consectetur adipiscing elit. Viverra in ul</p>
+            <a href="/">Read more ></a>
+          </li>
+        </ul>
       </div>
     </section>
 
     <section class="gallery">
       <div class="container">
         <h3>GALLERY</h3>
-        <h1>40+ YEARS’ EXPERIENCE</h1>
+        <h2>40+ YEARS’ EXPERIENCE</h2>
 
         <div class="choice">
-          <a href="/">Categories:</a>
-          <a href="/">All</a>
-          <a href="/">Male</a>
-          <a href="/">Female</a>
-          <a href="/">Kids</a>
+          <div class="column">
+            <p>Categories:</p>
+            <a href="/">All</a>
+            <a href="/">Male</a>
+            <a href="/">Female</a>
+            <a href="/">Kids</a>
+          </div>
 
-          <img src="img/testimonials-left.png" alt="next">
-          <img src="img/testimonials-left.png" alt="next">
+          <div class="column">
+            <img src="img/testimonials-left.png" alt="next">
+            <img src="img/testimonials-left.png" alt="next">
+          </div>
         </div>
 
-        <div class="shoes-first">
-          <img src="img/gallery-shoes1.png">
-          <h4>Puma RS-X Bold</h4>
-          <p>Size: Dubble-XL</p>
-          <p>Price 200$</p>
-          <button>Buy now</button>
-        </div>
+        <ul>
+          <li>
+            <img src="img/gallery-shoes1.png">
+            <h4>Puma RS-X Bold</h4>
+            <p>Size: Dubble-XL</p>
+            <p>Price 200$</p>
+            <button>Buy now</button>
+          </li>
 
-        <div class="shoes-second">
-          <img src="img/gallery-shoes2.png">
-          <h4>Puma Sneakers</h4>
-          <p>Size: Dubble-XL</p>
-          <p>Price 180$</p>
-          <button>Buy now</button>
-        </div>
+          <li>
+            <img src="img/gallery-shoes2.png">
+            <h4>Puma Sneakers</h4>
+            <p>Size: Dubble-XL</p>
+            <p>Price 180$</p>
+            <button>Buy now</button>
+          </li>
 
-        <div class="shoes-third">
-          <img src="img/gallery-shoes3.png">
-          <h4>Puma Ferrari</h4>
-          <p>Size: Dubble-XL</p>
-          <p>Price 190$</p>
-          <button>Buy now</button>
-        </div>
+          <li>
+            <img src="img/gallery-shoes3.png">
+            <h4>Puma Ferrari</h4>
+            <p>Size: Dubble-XL</p>
+            <p>Price 190$</p>
+            <button>Buy now</button>
+          </li>
 
-        <div class="shoes-fourth">
-          <img src="img/gallery-shoes4.png">
-          <h4>Puma Running</h4>
-          <p>Size: Dubble-XL</p>
-          <p>Price 200$</p>
-          <button>Buy now</button>
-        </div>
-
+          <li>
+            <img src="img/gallery-shoes4.png">
+            <h4>Puma Running</h4>
+            <p>Size: Dubble-XL</p>
+            <p>Price 200$</p>
+            <button>Buy now</button>
+          </li>
+        </ul>
       </div>
     </section>
 
     <section class="testimonials">
       <div class="container">
         <h2>Testimonials</h2>
-        <img src="img/testimonials-image.png" alt="testimonials-image">
-        <img src="img/testimonials-person.png" alt="testimonials-person">
-        <!--<img src="testimonials-left.png" alt="left">
-      <img src="testimonials-left.png" alt="left"> нужны ли эти кружки или делаем
-      css через-->
-        <img src="img/testimonials-vector.png" alt="vector">
-        <img src="img/testimonials-vector.png" alt="vector">
-        <h5>Their services was best and friendly</h5>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-          Purus tempor id faucibus quam lobortis.</p>
-        <h5>Abram Korsgaard</h5>
-        <p>Athletic</p>
+
+        <div class="row">
+          <img src="img/testimonials-image.png" alt="testimonials-image">
+
+          <div class="column">
+            <div class="row">
+              <img src="img/testimonials-person.png" alt="testimonials-person">
+              <div class="column">
+                <button>&lt;</button>
+                <button>&gt;</button>
+              </div>
+            </div>
+            <img src="img/testimonials-vector.png" alt="vector">
+            <img src="img/testimonials-vector.png" alt="vector">
+            <h5>Their services was best and friendly</h5>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Purus tempor id faucibus quam lobortis.</p>
+            <h5>Abram Korsgaard</h5>
+            <p>Athletic</p>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -210,23 +231,25 @@
       <div class="container">
         <img src="img/subscription-img.png" alt="subscription-image">
 
-        <h3>Sign up to our Newsletter</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-          Eu sagittis, Atiam lorem sed justo amet viverra in a.</p>
+        <div class="column">
+          <h3>Sign up to our Newsletter</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            Eu sagittis, Atiam lorem sed justo amet viverra in a.</p>
 
-        <form action="/">
-          <p>
-            <input type="email" name="email" placeholder="Enter your email address">
-            <input type="submit" value="send">
-          </p>
-        </form>
+          <form action="/">
+            <p>
+              <input type="email" name="email" placeholder="Enter your email address">
+              <input type="submit" value="send">
+            </p>
+          </form>
+        </div>
       </div>
     </section>
   </main>
 
   <footer>
     <div class="container">
-      <div class="footer">
+      <div class="row">
         <div>
           <img src="img/puma.png" alt="Logo">
           <h2>Puma</h2>
@@ -262,7 +285,7 @@
         </div>
       </div>
 
-      <div>
+      <div class="row">
         <h4>Copyright 2021 The PUMA All Rights Reserved.</h4>
       </div>
     </div>

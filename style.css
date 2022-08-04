@@ -1,3 +1,28 @@
+:root{
+  --accent-color: #EE5514;
+}
+
+body,
+input,
+button,
+select {
+  font-family: Poppins, sans-serif;
+}
+
+body::before {
+  display: block;
+  content: "";
+  height: 650px;
+  background-color: coral;
+  width: 74%;
+  position: absolute;
+  background: linear-gradient(to right, #FCEEE7, #FDF9F7);
+  z-index: -1;
+  transform: skewX(-10deg);
+  transform-origin: top;
+  margin: 14px 0 0;
+}
+
 .container {
   max-width: 1140px;
   margin: auto;
@@ -9,6 +34,20 @@ header .container {
   justify-content: space-between;
 }
 
+.logo {
+  position: relative;
+  display: block;
+}
+
+h1 {
+  font-family: 'Source Serif Pro', serif;
+  font-size: 22px;
+  font-weight: 600;
+  position: absolute;
+  left: 31px;
+  top: -1px;
+}
+
 header nav {
   width: 331px;
 }
@@ -16,6 +55,10 @@ header nav {
 header ul {
   display: flex;
   justify-content: space-between;
+}
+
+header li:hover {
+  color: var(--accent-color);
 }
 
 .hero .container {
@@ -47,12 +90,12 @@ header ul {
 
 }
 
-.videos{
+.videos {
   min-height: 434px;
 
 }
 
-.videos .container{
+.videos .container {
   display: flex;
 }
 
@@ -73,21 +116,82 @@ header ul {
   transform: translate(-50%, -50%);
 }
 
-.videos button{
+.videos button {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   height: 100px;
   width: 100px;
-  color:white;
+  color: white;
   border-radius: 50%;
   background-image: url("img/play.svg");
   background-repeat: no-repeat;
   background-position: center;
 }
 
+.features {
+  text-align: center;
+}
 
+.features ul {
+  display: flex;
+}
+
+.feature {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.feature .icon {
+  height: 140px;
+  width: 140px;
+  border-radius: 50%;
+  background-color: #EDDBE7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.feature:first-child .icon {
+  background-color: #E7F0FC;
+}
+
+.feature:last-child .icon {
+  border-color: #F6E9FD;
+}
+
+.gallery .choice {
+  display: flex;
+  justify-content: space-between;
+}
+
+.gallery .column {
+  display: flex;
+}
+
+.gallery ul {
+  display: flex;
+}
+
+.testimonials .row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.subscription .container {
+  display: flex;
+}
+
+footer .row {
+  display: flex;
+  justify-content: space-around;
+}
+
+footer .row>h4 {
+  text-align: center;
+}
 
 
 
