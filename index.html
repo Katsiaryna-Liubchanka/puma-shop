@@ -15,7 +15,7 @@
 
   <link rel="stylesheet" href="reset.css">
   <link rel="stylesheet" href="style.css">
-</head> 
+</head>
 
 <body>
   <header>
@@ -34,7 +34,7 @@
         </ul>
       </nav>
 
-      <button>Buy now</button>
+      <button class="buy">Buy now</button>
     </div>
   </header>
 
@@ -48,8 +48,9 @@
 
         <div class="column">
           <img src="img/shoes.png" alt="shoes">
-          <button></button>
         </div>
+
+        <button class="next-btn"></button>
       </div>
 
     </section>
@@ -93,7 +94,7 @@
             </select>
           </label>
 
-          <button>Buy now</button>
+          <button class="buy">Buy now</button>
         </form>
       </div>
     </section>
@@ -101,7 +102,7 @@
     <section class="videos">
       <div class="container">
         <div class="column">
-          <h3>Video</h3>
+          <h3>VIDEO</h3>
           <h2>Desire the feel of satisfaction.</h2>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Egestas leo ultrices commauris risus.</p>
         </div>
@@ -116,26 +117,26 @@
 
     <section class="features">
       <div class="container">
-        <h3>Feature</h3>
+        <h3>FEATURE</h3>
         <h2>We have best feature in Shoes</h2>
 
         <ul>
           <li class="feature">
-            <div class="icon"><img src="img/img-svg/quality-icon.svg"></div>
+            <div class="icon"><img src="img/svg/quality-icon.svg"></div>
             <h4>Quality</h4>
             <p>Lorem ipsum dolor sit consectetur adipiscing elit. Viverra in ul</p>
             <a href="/">Read more ></a>
           </li>
 
           <li class="feature">
-            <div class="icon"><img src="img/img-svg/flexible-icon.svg"></div>
+            <div class="icon"><img src="img/svg/flexible-icon.svg"></div>
             <h4>Flexible</h4>
             <p>Lorem ipsum dolor sit consectetur adipiscing elit. Viverra in ul</p>
             <a href="/">Read more ></a>
           </li>
 
           <li class="feature">
-            <div class="icon"><img src="img/img-svg/long-lasting-icon.svg"></div>
+            <div class="icon"><img src="img/svg/long-lasting-icon.svg"></div>
             <h4>Long Lastinge</h4>
             <p>Lorem ipsum dolor sit consectetur adipiscing elit. Viverra in ul</p>
             <a href="/">Read more ></a>
@@ -149,7 +150,7 @@
         <h3>GALLERY</h3>
         <h2>40+ YEARS’ EXPERIENCE</h2>
 
-        <div class="choice">
+        <div class="choices">
           <div class="column">
             <p>Categories:</p>
             <a href="/">All</a>
@@ -159,8 +160,8 @@
           </div>
 
           <div class="column">
-            <img src="img/testimonials-left.png" alt="next">
-            <img src="img/testimonials-left.png" alt="next">
+            <button class="back"></button>
+            <button class="forward"></button>
           </div>
         </div>
 
@@ -168,25 +169,25 @@
           <li>
             <img src="img/gallery-shoes1.png">
             <h4>Puma RS-X Bold</h4>
-            <p>Size: Dubble-XL</p>
-            <p>Price 200$</p>
-            <button>Buy now</button>
+            <p><span>Size:</span> Dubble-XL</p>
+            <p><span>Price</span> 200$</p>
+            <button class="buy">Buy now</button>
           </li>
 
           <li>
             <img src="img/gallery-shoes2.png">
             <h4>Puma Sneakers</h4>
-            <p>Size: Dubble-XL</p>
-            <p>Price 180$</p>
-            <button>Buy now</button>
+            <p><span>Size:</span> Dubble-XL</p>
+            <p><span>Price</span> 180$</p>
+            <button class="buy">Buy now</button>
           </li>
 
           <li>
             <img src="img/gallery-shoes3.png">
             <h4>Puma Ferrari</h4>
-            <p>Size: Dubble-XL</p>
-            <p>Price 190$</p>
-            <button>Buy now</button>
+            <p><span>Size:</span> Dubble-XL</p>
+            <p><span>Price</span> 190$</p>
+            <button class="buy">Buy now</button>
           </li>
 
           <li>
@@ -194,7 +195,7 @@
             <h4>Puma Running</h4>
             <p>Size: Dubble-XL</p>
             <p>Price 200$</p>
-            <button>Buy now</button>
+            <button class="buy">Buy now</button>
           </li>
         </ul>
       </div>
@@ -211,13 +212,13 @@
             <div class="row">
               <img src="img/testimonials-person.png" alt="testimonials-person">
               <div class="column">
-                <button>&lt;</button>
-                <button>&gt;</button>
+                <button class="back"></button>
+                <button class="forward"></button>
               </div>
             </div>
             <img src="img/testimonials-vector.png" alt="vector">
             <img src="img/testimonials-vector.png" alt="vector">
-            <h5>Their services was best and friendly</h5>
+            <h4>Their services was best and friendly</h4>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
               Purus tempor id faucibus quam lobortis.</p>
             <h5>Abram Korsgaard</h5>
@@ -232,16 +233,18 @@
         <img src="img/subscription-img.png" alt="subscription-image">
 
         <div class="column">
-          <h3>Sign up to our Newsletter</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            Eu sagittis, Atiam lorem sed justo amet viverra in a.</p>
-
-          <form action="/">
-            <p>
-              <input type="email" name="email" placeholder="Enter your email address">
-              <input type="submit" value="send">
-            </p>
-          </form>
+          <div class="row">
+            <h3>Sign up to our Newsletter</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Eu sagittis, Atiam lorem sed justo amet viverra in a.</p>
+  
+            <form action="/">
+              <p>
+                <input class="email" type="email" name="email" placeholder="Enter your email address">
+                <input class="send" type="submit" value="Send">
+              </p>
+            </form>
+          </div>
         </div>
       </div>
     </section>
@@ -250,40 +253,46 @@
   <footer>
     <div class="container">
       <div class="row">
-        <div>
-          <img src="img/puma.png" alt="Logo">
-          <h2>Puma</h2>
+        <div class="column">
+          <a class="logo" href="/">
+            <img src="img/puma.png">
+            <h1>Puma</h1>
+          </a>
           <p>10 New Town Street, V2 5NW, Newstate, USA.</p>
           <p>shovasatkhira88@gmail.com</p>
-          <a href="/"><img src="img/facebook.png"></a>
-          <a href="/"><img src="img/instagram.png"></a>
-          <a href="/"><img src="img/twitter.png"></a>
-          <a href="/"><img src="img/gmail.png"></a>
+          <ul class="social">
+            <li><a href="/"><img src="img/facebook.png"></a></li>
+            <li><a href="/"><img src="img/instagram.png"></a></li>
+            <li><a href="/"><img src="img/twitter.png"></a></li>
+            <li><a href="/"><img src="img/gmail.png"></a></li>
+          </ul>
         </div>
 
-        <div>
+        <div class="column">
           <h4>Our services</h4>
           <h5>About us</h5>
           <p>Feature</p>
           <p>Gallery</p>
         </div>
 
-        <div>
+        <div class="column">
           <h4>Support</h4>
           <p>Privacy & Policy</p>
-          <p>Terms & Condition</p>
+          <p>Terclass & Condition</p>
           <p>Support System</p>
         </div>
 
-        <div>
-          <h3>Contact us</h3>
+        <div class="column">
+          <h4>Contact us</h4>
           <p>Lorem ipsum dolor sit amet consectetur adipiscin.</p>
           <p>
-            <input type="email" name="email" placeholder="Mail address">
-            <input type="submit" value="send">
+            <input  class="email" type="email" name="email" placeholder="Mail address">
+            <input class="buy" type="submit" value="send">
           </p>
         </div>
       </div>
+
+      <hr>
 
       <div class="row">
         <h4>Copyright 2021 The PUMA All Rights Reserved.</h4>
