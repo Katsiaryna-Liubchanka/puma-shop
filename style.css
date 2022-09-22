@@ -83,6 +83,10 @@ button.buy {
   margin-left: auto;
 }
 
+button.buy:hover {
+  color: var(--color);
+}
+
 main {
   padding-top: 51px;
 }
@@ -142,7 +146,9 @@ main {
   z-index: -1;
 }
 
-
+.choice {
+  padding-bottom: 140px;
+}
 
 .choice form {
   display: flex;
@@ -184,7 +190,7 @@ main {
 }
 
 .videos {
-  min-height: 434px;
+  margin-bottom: 140px;
 
 }
 
@@ -204,6 +210,8 @@ main {
   width: 600px;
   font-size: 20px;
   color: var(--accent-color);
+  margin-top: 63px;
+  margin-bottom: 10px;
 }
 
 .videos h2 {
@@ -211,6 +219,8 @@ main {
   font-weight: 600;
   font-size: 44px;
   max-width: 605%;
+  margin: 0;
+  margin-bottom: 10px;
 }
 
 .videos p {
@@ -218,26 +228,23 @@ main {
   max-width: 60%;
 }
 
-.videos video {
-  width: 555px;
-  height: 326px;
-  background-image: url("img/video.png");
+.videos .video {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  top: 54px;
+  right: 50px;
 }
+
 
 .videos button {
   position: absolute;
   top: 50%;
-  left: 50%;
+  left: 43%;
   transform: translate(-50%, -50%);
   height: 100px;
   width: 100px;
   color: white;
   border-radius: 50%;
-  background-image: url("img/play.svg");
+  background-image: url("img/svg/play.svg");
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -399,11 +406,22 @@ a {
   background-position: center;
 }
 
-.choices button.forward {
+.choices button.back:hover {
   background-image: url(img/svg/arrow-small-bright.svg);
+  transform: rotate(180deg);
+}
+
+.choices button.forward {
+  background-image: url(img/svg/arrow-small-grey.svg);
   background-repeat: no-repeat;
   background-position: center;
+  transform: rotate(180deg);
   margin-left: 50px;
+}
+
+.choices button.forward:hover {
+  background-image: url(img/svg/arrow-small-bright.svg);
+  transform: none;
 }
 
 .gallery ul {
@@ -415,6 +433,10 @@ a {
   width: 263px;
   padding-right: 30px;
   justify-content: left;
+}
+
+.gallery li img:hover {
+  box-shadow: 0px 0px 6px 2px var(--accent-color);
 }
 
 .gallery li span {
@@ -486,11 +508,22 @@ a {
   background-position: center;
 }
 
-.testimonials button.forward {
+.testimonials button.back:hover {
   background-image: url(img/svg/arrow-small-bright.svg);
+  transform: rotate(180deg);
+}
+
+.testimonials button.forward {
+  background-image: url(img/svg/arrow-small-grey.svg);
+  transform: rotate(180deg);
   background-repeat: no-repeat;
   background-position: center;
   margin-left: 50px;
+}
+
+.testimonials button.forward:hover {
+  background-image: url(img/svg/arrow-small-bright.svg);
+  transform: none;
 }
 
 .testimonials .row h4 {
@@ -545,7 +578,9 @@ a {
 
 .subscription input.email {
   width: 409px;
-  height: 45px;
+  height: 44px;
+  border-radius:5px;
+  border: 1px solid grey;
 }
 
 .subscription input.send {
@@ -553,6 +588,11 @@ a {
   background-color: var(--accent-color);
   color: white;
   border-radius: 5px;
+  border: none;
+}
+
+.subscription input.send:hover {
+  color: var(--color);
 }
 
 footer {
@@ -616,6 +656,8 @@ footer .column p {
 footer input.email {
   width: 200px;
   height: 46px;
+  border-radius: 5px;
+  border: 1px solid grey;
 }
 
 footer input.buy {
@@ -623,6 +665,11 @@ footer input.buy {
   background-color: var(--accent-color);
   color: white;
   border-radius: 5px;
+  border: none;
+}
+
+footer input.buy:hover {
+  color: var(--color);
 }
 
 footer .row>h4 {
